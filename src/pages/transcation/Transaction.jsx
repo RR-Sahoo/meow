@@ -11,9 +11,9 @@ const Transaction = () => {
 
   // Function to validate the wallet address format
   const validateWalletAddress = (address) => {
-    const regex = /^0x[a-fA-F0-9]{4}$/;
-    return regex.test(address);
-  };
+  const regex = /^0x[a-fA-F0-9]{40}$/;
+  return regex.test(address);
+};
 
   // Function to validate the amount format
   const validateAmount = (value) => {
